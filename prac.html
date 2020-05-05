@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <script>
+
+        document.addEventListener('DOMContentLoaded',function(){
+          document.querySelector('#name').onsubmit=function(e){
+
+           
+              const a=document.querySelector('#nam').value;
+              const b=document.querySelector('#nam2').value;
+              const c=document.querySelector('#nam3').value;
+            //  let d=(a+b+c)*100/120;
+            //  alert(`hi ${a}`);
+            document.querySelector('#head').innerHTML=(Number(a)+Number(b)+Number(c))*100/120;
+             e.preventDefault()
+          };
+        });
+    </script>
+    <body>
+        <h1 id="head">hello</h1>
+            <form id="name">
+            <input id="nam" autocomplete="off" autofocus placeholder="marks1" type="number">
+            <input id="nam2" autocomplete="off" autofocus  placeholder="marks2" type="number">
+            <input id="nam3" autocomplete="off" autofocus  placeholder="marks3" type="text"> 
+            <input type="submit">
+        </form>
+    </body>
+</html>
