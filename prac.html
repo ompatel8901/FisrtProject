@@ -13,13 +13,17 @@
               const c=document.querySelector('#nam3').value;
             //  let d=(a+b+c)*100/120;
             //  alert(`hi ${a}`);
+            document.querySelector('#name1').innerHTML=(Number(a)+Number(b)+Number(c));
             document.querySelector('#head').innerHTML=(Number(a)+Number(b)+Number(c))*100/120;
              e.preventDefault()
           };
         });
     </script>
     <body>
-        <h1 id="head">hello</h1>
+        <h1>Total</h1>
+        <p id=name1></p>
+        <h1>After converting to 120</h1>
+        <p id="head"></p>
             <form id="name">
             <input id="nam" autocomplete="off" autofocus placeholder="marks1" type="number">
             <input id="nam2" autocomplete="off" autofocus  placeholder="marks2" type="number">
